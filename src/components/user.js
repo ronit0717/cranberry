@@ -18,7 +18,7 @@ class User extends Component {
         dummyAttr : 123,
         hobbies2 : ['singing', 'dancing'],
         rollNumber : 123,
-        motherTounge: 'Hindi'
+        motherTounge: 'Bangla'
     }
 
     render() {
