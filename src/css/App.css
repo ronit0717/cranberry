@@ -122,4 +122,19 @@
 /*=======================================
                 TRANSITIONS GROUP 
 ========================================*/
+.item {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease-in;
+}
 
+.item.active, 
+.item-enter.item-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.item-exit.item-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
