@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const UserTemplate = (props) => {
-    console.log(props);
-    return (
-        <div>
-            PROP TYPES TEST
-        </div>
-    );
-};
+class UserTemplate extends Component {
+    render() {
+        console.log(this.props);
+        return (
+            <div>
+                PROP TYPE TEMPLATE (RCC)
+            </div>
+        );
+    }
+}
 
-UserTemplate.PropTypes = {
+UserTemplate.propTypes = {
     firstName: PropTypes.string,
     lastName: PropTypes.string,
     age: PropTypes.number,
@@ -24,7 +26,13 @@ UserTemplate.PropTypes = {
         PropTypes.oneOf([123,321])
     ]),
     hobbies2 : PropTypes.arrayOf(PropTypes.string),
-    rollNumber : PropTypes.number.isRequired
+    rollNumber : PropTypes.number.isRequired,
+    motherTounge : function(props, propName, componentName) {
+        if(props[propName] !== 'Bangla'){
+            return new Error(`Mother toungue ${props[propName]} is incorrect for Ronit`);
+        }
+    }
 }
+
 
 export default UserTemplate;

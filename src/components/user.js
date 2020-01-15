@@ -4,9 +4,9 @@ import UserTemplate from './user_component';
 class User extends Component {
 
     state = {
-        firstName : 100,
+        firstName : 'Ronit',
         lastName : 'Chattopadhyay',
-        age : '26',
+        age : 26,
         hobbies : ['singing', 'dancing'],
         Indian : true,
         message() {console.log('test message')},
@@ -15,9 +15,10 @@ class User extends Component {
             'height' : '183 cm'
         },
         company : 'Quikr',
-        dummyAttr : 500,
+        dummyAttr : 123,
         hobbies2 : ['singing', 'dancing'],
-        rollNumber : 123
+        rollNumber : 123,
+        motherTounge: 'Hindi'
     }
 
     render() {
