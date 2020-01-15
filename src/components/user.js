@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserTemplate from './user_component';
+import Uncontrolled from './Uncontrolled';
 
 class User extends Component {
 
@@ -25,6 +26,8 @@ class User extends Component {
         return (
             <div>
                 <UserTemplate {...this.state} />
+                <hr/>
+                <Uncontrolled></Uncontrolled>
             </div>
         );
     }

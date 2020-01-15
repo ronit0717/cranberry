@@ -6,7 +6,7 @@ class UserTemplate extends Component {
         console.log(this.props);
         return (
             <div>
-                PROP TYPE TEMPLATE (RCC)
+                <h3>USER DETAILS</h3>
             </div>
         );
     }
